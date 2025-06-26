@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Store - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo">
+          <img src="images/amazon_logo.png" alt="Your Store" />
+        </div>
+        <div class="delivery">
+          <div class="delivery-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="delivery-text">
+            <span class="deliver-to">Deliver to</span>
+            <span class="country">India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-search">
+        <select class="search-select">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Home</option>
+          <option>Books</option>
+        </select>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search Your Store"
+        />
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-item">
+          <span class="nav-line1">Hello, Sign in</span>
+          <span class="nav-line2">Account & Lists</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-line1">Returns</span>
+          <span class="nav-line2">& Orders</span>
+        </div>
+        <div class="nav-item cart" id="cart">
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+          <span class="nav-line2">Cart</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Secondary Navbar -->
+    <div class="secondary-nav">
+      <div class="secondary-nav-left">
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h3>Menu</h3>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#"><i class="fas fa-bars"></i> All Categories</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-box"></i> Your Orders</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-crown"></i> Prime</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-laptop"></i> Electronics</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-tshirt"></i> Fashion</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-gamepad"></i> Toys</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-spa"></i> Beauty</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-couch"></i> Furniture</a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Find gifts for dads who have it all</h1>
+        <p>Discover amazing deals on Father's Day specials</p>
+        <button class="shop-now">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="categories">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <img src="images/box1_image.jpg " alt="Clothes" />
+          <h3>Clothes</h3>
+          <button class="see-more" data-category="clothes">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box2_image.jpg" alt="Health & Personal Care" />
+          <h3>Health & Personal Care</h3>
+          <button class="see-more" data-category="health">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box3_image.jpg" alt="Furniture" />
+          <h3>Furniture</h3>
+          <button class="see-more" data-category="furniture">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box4_image.jpg" alt="Devices" />
+          <h3>Devices</h3>
+          <button class="see-more" data-category="devices">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box5_image.jpg" alt="Makeup" />
+          <h3>Makeup</h3>
+          <button class="see-more" data-category="makeup">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box6_image.jpg" alt="Pets Accessories" />
+          <h3>Pets Accessories</h3>
+          <button class="see-more" data-category="pets">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box7_image.jpg" alt="Toys" />
+          <h3>Toys</h3>
+          <button class="see-more" data-category="toys">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box8_image.jpg" alt="Fashion Trends" />
+          <h3>Fashion Trends</h3>
+          <button class="see-more" data-category="fashion">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box8_image.jpg" alt="Fashion Trends" />
+          <h3>Fashion Trends</h3>
+          <button class="see-more" data-category="fashion">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box8_image.jpg" alt="Fashion Trends" />
+          <h3>Fashion Trends</h3>
+          <button class="see-more" data-category="fashion">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box8_image.jpg" alt="Fashion Trends" />
+          <h3>Fashion Trends</h3>
+          <button class="see-more" data-category="fashion">See More</button>
+        </div>
+        <div class="category-card">
+          <img src="images/box8_image.jpg" alt="Fashion Trends" />
+          <h3>Fashion Trends</h3>
+          <button class="see-more" data-category="fashion">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productsSection">
+      <h2 id="productsTitle">Featured Products</h2>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Get to Know Us</h3>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press Releases</a>
+        </div>
+        <div class="footer-column">
+          <h3>Make Money with Us</h3>
+          <a href="#">Sell products</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Advertise Your Products</a>
+        </div>
+        <div class="footer-column">
+          <h3>Payment Products</h3>
+          <a href="#">Business Card</a>
+          <a href="#">Shop with Points</a>
+          <a href="#">Reload Your Balance</a>
+        </div>
+        <div class="footer-column">
+          <h3>Let Us Help You</h3>
+          <a href="#">Your Account</a>
+          <a href="#">Your Orders</a>
+          <a href="#">Shipping Rates & Policies</a>
+          <a href="#">Returns & Replacements</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img src="images/amazon_logo.png" alt="Your Store" />
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2025 Your Store. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
